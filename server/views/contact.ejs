@@ -1,0 +1,93 @@
+<%- include Partials/header.ejs %>
+
+<%- include Partials/main_nav.ejs %>
+
+
+
+<!--Styling code provided by W3SCHOOLS-->
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+
+<!-- Contact Page -->
+<main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+    </div>
+    
+    <h1 style="text-align: center;">E-mail Address</h1>
+    <br></br>
+    <p style="font-size: x-large; text-align: center;"> jtimbol@my.centennialcollege.ca</p>
+    <br></br>
+    
+    <h1 style="text-align: center;">Contact Number</h1>
+    <br></br>
+    <p style="font-size: x-large; text-align: center;"> (647) 462-6782</p>
+  </main>
+  
+  <br></br>
+  <h2 style="text-align: center;">Have any questions or concerns? Let me know below!</h2>
+  <br></br>
+    
+  <!--Form user can fill out to ask any questions, etc-->
+  <form style="text-align: center;">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+    <label for="phonenumber">Phone Number</label>
+    <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+
+    <label for="E-mail">E-mail</label>
+    <input type="text" id="E-mail" name="E-mail" placeholder="E-mail">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <a  href="home" style="font-size: xx-large;" class="button--style-red">Submit</a>
+  </form>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+
+
+<%- include Partials/bottom_nav.ejs %>
+
+
+ <%- include Partials/footer.ejs %>
